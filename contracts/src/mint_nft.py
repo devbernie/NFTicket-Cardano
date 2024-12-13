@@ -79,9 +79,14 @@ def mint_nft(event_id: str, ticket_type: str, owner_address: str, metadata: Dict
         [signing_key], change_address=Address.from_primitive(owner_address)
     )
 
+    # Log the metadata before submission
+    print(f"Submitting transaction with metadata: {metadata}")
+    
     # Submit the transaction
     tx_id = context.submit_tx(signed_tx)
     print(f"Transaction submitted: {tx_id}")
+    if tx_id is None:
+        print("Transaction submission failed, returned None.")
 
     return tx_id
 
