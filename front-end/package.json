@@ -1,0 +1,24 @@
+{
+  "name": "nfticket-front-end",
+  "version": "1.0.0",
+  "description": "Vue.js front end for NFTicket DApp",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucid-cardano": "^0.10.11",
+    "qrcode.react": "^4.2.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  }
+}

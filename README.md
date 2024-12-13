@@ -1,1 +1,0 @@
-# NFTicket-Cardano
