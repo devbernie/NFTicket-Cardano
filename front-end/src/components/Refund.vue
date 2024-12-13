@@ -38,8 +38,9 @@ export default {
     async submitRefund() {
       this.transactionHash = '';
       this.errorMessage = '';
+      const baseURL = process.env.VUE_APP_API_BASE_URL;
       try {
-        const response = await axios.post('http://localhost:3000/refund', {
+        const response = await axios.post(`${baseURL}/refund`, {
           ticketId: this.ticketId,
           walletAddress: this.walletAddress
         });

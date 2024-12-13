@@ -7,10 +7,7 @@ import axios from 'axios';
 // Function to check if the ticket is valid
 const isTicketValid = async (ticketId) => {
   try {
-    // Example API endpoint to check ticket validity
-    const response = await axios.get(`https://your-api-endpoint.com/tickets/${ticketId}`);
-
-    // Assuming the API returns a JSON object with a 'valid' property
+    const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/tickets/${ticketId}`);
     return response.data.valid; // true if valid, false otherwise
   } catch (error) {
     console.error('Error checking ticket validity:', error);
