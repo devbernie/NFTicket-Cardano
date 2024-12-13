@@ -12,6 +12,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "lucid-cardano": "^0.10.11",
+    "pdf-parse": "^1.1.1",
     "qrcode.react": "^4.2.0",
     "vue": "^3.0.0"
   },
